@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 10</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Модуль 10</h1>
+      <h2 class="subtitle">Задание 1</h2>
+      <button class="btn">
+        <div class="btn__text">Click me</div>
+        <div class="btn__svg">
+          <div class="btn__svg-first">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              class="bi bi-arrow-down-left-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-5.904-2.854a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768z"
+              />
+            </svg>
+          </div>
+          <div class="btn__svg-second hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              class="bi bi-arrow-down-left-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-5.904-2.803a.5.5 0 1 1 .707.707L6.707 10h2.768a.5.5 0 0 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.525a.5.5 0 0 1 1 0v2.768z"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+      <h2 class="subtitle">Задание 2</h2>
+      <button class="btn-screen-size">Размеры экрана</button>
+      <h2 class="subtitle">Задание 3</h2>
+      <div class="direct-chat-buttons">
+        <button class="open-chat ws-btn">Открыть чат</button>
+        <button class="close-chat ws-btn">Закрыть чат</button>
+      </div>
+      <div class="ws hidden">
+        <div class="ws__input-block">
+          <input
+            type="text"
+            class="ws__input"
+            placeholder="Здесь вводится текст сообщения"
+          />
+          <button class="ws__button ws-btn">Отправить</button>
+        </div>
+        <div class="ws__chat"></div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

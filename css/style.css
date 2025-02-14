@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 120%;
+  font-weight: 700;
+  color: rgb(21, 21, 199);
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 120%;
+  font-weight: 700;
+  color: rgb(19, 99, 19);
+}
+
+.btn {
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 170px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(189, 238, 238);
+  border: 1px solid aqua;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  box-shadow: 0 0 10px rgb(30, 63, 63);
+}
+.btn__text {
+  font-size: 25px;
+  font-weight: 500;
+}
+.btn__svg-first, .btn__svg-second {
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Задание 2*/
+.btn-screen-size {
+  margin-bottom: 50px;
+  width: 200px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 500;
+  border-radius: 15px;
+  background-color: rgb(50, 116, 50);
+  border: 2px solid rgb(19, 99, 19);
+  color: rgb(219, 212, 212);
+  transition: all 0.5s ease;
+}
+.btn-screen-size:hover {
+  background-color: rgb(219, 212, 212);
+  color: rgb(50, 116, 50);
+}
+
+/*Задание 3*/
+.direct-chat-buttons {
+  margin-bottom: 20px;
+}
+
+.open-chat {
+  margin-right: 20px;
+  background-color: rgb(166, 199, 166);
+}
+
+.close-chat {
+  background-color: rgb(214, 163, 163);
+}
+
+.ws-btn {
+  padding: 10px 15px;
+  font-size: 20px;
+  line-height: 120%;
+  transition: all 0.5s ease;
+}
+.ws-btn:hover {
+  box-shadow: 0 0 10px rgb(31, 42, 94);
+}
+
+.ws {
+  width: 500px;
+  position: relative;
+}
+.ws__button {
+  background-color: rgb(181, 222, 230);
+}
+.ws__input-block {
+  display: flex;
+  margin-bottom: 20px;
+}
+.ws__input {
+  margin-right: 20px;
+  width: 320px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 120%;
+  border: 3px solid rgb(181, 222, 230);
+}
+.ws__input::-moz-placeholder {
+  color: rgb(209, 204, 204);
+}
+.ws__input::placeholder {
+  color: rgb(209, 204, 204);
+}
+.ws__chat {
+  padding: 5px;
+  overflow: auto;
+  width: 460px;
+  height: 300px;
+  border: 3px solid rgb(181, 222, 230);
+}
+.ws__chat-message {
+  margin-top: 10px;
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(81, 175, 194);
+  border: 2px solid rgb(81, 175, 194);
+  border-radius: 10px;
+}
+.ws__chat-geo {
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(91, 162, 177);
+  color: rgb(91, 162, 177);
+  border-radius: 10px;
+  z-index: 5;
+}
+.ws__chat-link {
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+  color: rgb(0, 0, 255);
+  transition: all 0.5s ease;
+}
+.ws__chat-link:hover {
+  text-decoration: underline;
+}
